@@ -1,0 +1,50 @@
+[
+  {
+    "id": "higgsfield",
+    "name": "Higgsfield",
+    "url": "https://higgsfield.ai/",
+    "watchTerms": ["GPT Image", "Seedance", "Kling", "Sora", "Nano Banana", "FLUX", "Veo", "Wan", "Recraft"]
+  },
+  {
+    "id": "artlist",
+    "name": "Artlist",
+    "url": "https://artlist.io/",
+    "watchTerms": ["Veo", "Nano Banana", "Kling", "GPT Image", "Sora", "Seedance", "Lyria", "ElevenLabs", "Wan"]
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io/",
+    "watchTerms": ["Eleven v3", "Music", "Scribe", "Dubbing", "Voice"]
+  },
+  {
+    "id": "weavy",
+    "name": "Figma Weave",
+    "url": "https://weave.figma.com/",
+    "watchTerms": ["Google", "Kling", "OpenAI", "Bytedance", "Black Forest Labs", "Runway", "Luma", "LTX", "Wan", "Recraft", "Bria"]
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "url": "https://runwayml.com/pricing",
+    "watchTerms": ["Gen-4", "Veo", "Kling", "Seedance", "Flux"]
+  },
+  {
+    "id": "pika",
+    "name": "Pika",
+    "url": "https://pika.art/pricing",
+    "watchTerms": ["Pika 2.5", "Pikaframes", "Pikascenes", "Pikaswaps"]
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+    "watchTerms": ["Basic", "Standard", "Pro", "Mega", "Video"]
+  },
+  {
+    "id": "adobe-firefly",
+    "name": "Adobe Firefly",
+    "url": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html",
+    "watchTerms": ["Firefly Image", "Firefly Video", "Generative Credits", "Premium"]
+  }
+]

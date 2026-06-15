@@ -1,0 +1,141 @@
+{
+  "checkedAt": "2026-06-15T13:05:05.545Z",
+  "ok": false,
+  "results": [
+    {
+      "id": "higgsfield",
+      "name": "Higgsfield",
+      "url": "https://higgsfield.ai/",
+      "ok": true,
+      "status": 200,
+      "checkedAt": "2026-06-15T13:04:56.497Z",
+      "durationMs": 266,
+      "matches": {
+        "GPT Image": true,
+        "Seedance": true,
+        "Kling": true,
+        "Sora": true,
+        "Nano Banana": true,
+        "FLUX": true,
+        "Veo": true,
+        "Wan": true,
+        "Recraft": true
+      }
+    },
+    {
+      "id": "artlist",
+      "name": "Artlist",
+      "url": "https://artlist.io/",
+      "ok": false,
+      "status": 403,
+      "checkedAt": "2026-06-15T13:04:56.574Z",
+      "durationMs": 77,
+      "matches": {
+        "Veo": false,
+        "Nano Banana": false,
+        "Kling": false,
+        "GPT Image": false,
+        "Sora": false,
+        "Seedance": false,
+        "Lyria": false,
+        "ElevenLabs": false,
+        "Wan": false
+      }
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "url": "https://elevenlabs.io/",
+      "ok": true,
+      "status": 200,
+      "checkedAt": "2026-06-15T13:04:56.860Z",
+      "durationMs": 286,
+      "matches": {
+        "Eleven v3": true,
+        "Music": true,
+        "Scribe": true,
+        "Dubbing": true,
+        "Voice": true
+      }
+    },
+    {
+      "id": "weavy",
+      "name": "Figma Weave",
+      "url": "https://weave.figma.com/",
+      "ok": true,
+      "status": 200,
+      "checkedAt": "2026-06-15T13:04:56.950Z",
+      "durationMs": 90,
+      "matches": {
+        "Google": true,
+        "Kling": true,
+        "OpenAI": true,
+        "Bytedance": true,
+        "Black Forest Labs": true,
+        "Runway": true,
+        "Luma": true,
+        "LTX": true,
+        "Wan": true,
+        "Recraft": true,
+        "Bria": true
+      }
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "url": "https://runwayml.com/pricing",
+      "ok": true,
+      "status": 200,
+      "checkedAt": "2026-06-15T13:04:57.064Z",
+      "durationMs": 114,
+      "matches": {
+        "Gen-4": true,
+        "Veo": true,
+        "Kling": true,
+        "Seedance": true,
+        "Flux": true
+      }
+    },
+    {
+      "id": "pika",
+      "name": "Pika",
+      "url": "https://pika.art/pricing",
+      "ok": true,
+      "status": 200,
+      "checkedAt": "2026-06-15T13:04:57.479Z",
+      "durationMs": 415,
+      "matches": {
+        "Pika 2.5": true,
+        "Pikaframes": true,
+        "Pikascenes": true,
+        "Pikaswaps": true
+      }
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+      "ok": false,
+      "status": 403,
+      "checkedAt": "2026-06-15T13:04:57.538Z",
+      "durationMs": 59,
+      "matches": {
+        "Basic": false,
+        "Standard": false,
+        "Pro": false,
+        "Mega": false,
+        "Video": false
+      }
+    },
+    {
+      "id": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "url": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html",
+      "ok": false,
+      "error": "This operation was aborted",
+      "checkedAt": "2026-06-15T13:05:05.545Z",
+      "durationMs": 8007,
+      "matches": {}
+    }
+  ]
+}

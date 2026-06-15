@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Track GenAI models, platforms, pricing, and availability in one place. Updated daily.">
+  <title>GenAI Index - Models & platforms directory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #f7f7f2;
+      --muted: #8f8f89;
+      --faint: #62625e;
+      --line: #2a2a28;
+      --paper: #000;
+      --surface: #0c0c0b;
+      --field: #1b1b1a;
+      --soft: #f4f4ef;
+      --green: #b5f0cf;
+      --blue: #b8d7ff;
+      --red: #ffb7a5;
+      --gold: #f1d27c;
+      --violet: #d3c3ff;
+      --sans: "BDO Grotesk", "Helvetica Neue", Arial, sans-serif;
+      --mono: "Geist Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      --rail-left: 260px;
+      --rail-width: min(1440px, calc(100vw - var(--rail-left) - 24px));
+    }
+
+    @font-face {
+      font-family: "BDO Grotesk";
+      src: url(/res/BDOGrotesk-Regular.woff2);
+      font-weight: normal;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { background: var(--paper); }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 14px/1.42 var(--sans);
+    }
+
+    a { color: inherit; }
+
+    .app {
+      position: relative;
+      min-height: 100vh;
+      padding: 0 24px 48px;
+    }
+
+    .app > *,
+    .topbar > *,
+    .toolbar > *,
+    .grid > *,
+    .updates > * {
+      min-width: 0;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 50%;
+      left: 24px;
+      transform: translateY(-50%);
+      z-index: 3;
+      width: 118px;
+      max-width: calc(100vw - 48px);
+      height: fit-content;
+    }
+
+    .brand {
+      position: fixed;
+      top: 27px;
+      left: 24px;
+      width: 260px;
+      color: var(--ink);
+      font: 12px/1 var(--mono);
+      letter-spacing: 0;
+    }
+
+    .mark { display: none; }
+
+    .brand strong {
+      display: inline;
+      font-weight: 400;
+    }
+
+    .brand strong::before { content: "/"; }
+
+    .brand span {
+      display: inline;
+      color: var(--muted);
+      font-size: 12px;
+      margin-left: 5px;
+    }
+
+    .brand span::before { content: "("; }
+    .brand span::after { content: ")"; }
+
+      nav {
+        display: grid;
+        gap: 0;
+        font: 12px/1 var(--mono);
+      }
+
+    .menu-toggle {
+      display: none;
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      background: #000;
+      color: var(--ink);
+      padding: 0;
+      position: relative;
+    }
+
+    .menu-toggle span,
+    .menu-toggle::before,
+    .menu-toggle::after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      height: 1px;
+      background: var(--ink);
+    }
+
+    .menu-toggle::before { top: 12px; }
+    .menu-toggle span { top: 19px; }
+    .menu-toggle::after { top: 26px; }
+
+    nav a {
+      min-height: 24px;
+      padding: 6px 12px;
+      color: var(--ink);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    nav a:first-child,
+    nav a:hover {
+      background: var(--soft);
+      color: #111;
+    }
+
+    .side-note,
+    .lede,
+    .status-card,
+    .kpis {
+      display: none;
+    }
+
+    .main {
+      min-width: 0;
+      max-width: 100%;
+      padding-top: 64px;
+    }
+
+    .topbar {
+      display: block;
+      width: var(--rail-width);
+      max-width: var(--rail-width);
+      margin-left: var(--rail-left);
+      margin-bottom: 64px;
+    }
+
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font: 400 clamp(42px, 3.6vw, 52px)/.94 var(--sans);
+      letter-spacing: 0;
+      line-height: 1.1;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(260px, 330px) minmax(240px, 330px) minmax(170px, 212px) minmax(170px, 212px);
+      gap: 24px;
+      align-items: end;
+      width: var(--rail-width);
+      max-width: var(--rail-width);
+      margin-left: var(--rail-left);
+      margin-bottom: 48px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--ink);
+      font: 400 12px/1 var(--mono);
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    input,
+    select {
+      width: 100%;
+      height: 40px;
+      min-height: 40px;
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      color: var(--ink);
+      padding: 0 15px;
+      font: 12px/1 var(--mono);
+      outline: none;
+    }
+
+    input {
+      background: #000;
+    }
+
+    select {
+      appearance: none;
+      background-color: var(--field);
+      background-image:
+        linear-gradient(45deg, transparent 50%, var(--ink) 50%),
+        linear-gradient(135deg, var(--ink) 50%, transparent 50%);
+      background-position:
+        calc(100% - 19px) 16px,
+        calc(100% - 13px) 16px;
+      background-size: 7px 7px, 7px 7px;
+      background-repeat: no-repeat;
+      border: 1px transparent;
+    }
+
+    section {
+      scroll-margin-top: 18px;
+      margin-top: 42px;
+    }
+
+    .main > section {
+      margin-left: var(--rail-left);
+      max-width: var(--rail-width);
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: end;
+      margin-bottom: 14px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+
+    h2 {
+      margin: 0;
+      font: 400 24px/1.05 var(--sans);
+      letter-spacing: 0;
+    }
+
+    .section-head p,
+    .sub,
+    .update p,
+    .sources,
+    .description {
+      color: var(--muted);
+    }
+
+    .section-head p {
+      max-width: 620px;
+      margin: 4px 0 0;
+      font-size: 13px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      min-width: 0;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      padding: 16px;
+      display: grid;
+      gap: 13px;
+    }
+
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .card h3,
+    .update h3 {
+      margin: 0;
+      font: 400 18px/1.1 var(--sans);
+      letter-spacing: 0;
+    }
+
+    .sub {
+      margin: 4px 0 0;
+      font-size: 13px;
+    }
+
+    .badge,
+    .tag,
+    .yes,
+    .no,
+    .partial {
+      display: inline-flex;
+      align-items: center;
+      min-height: 20px;
+      border: 1px solid var(--line);
+      border-radius: 0;
+      padding: 3px 7px;
+      font: 11px/1 var(--mono);
+      white-space: nowrap;
+    }
+
+    .badge.image { color: var(--violet); }
+    .badge.video { color: var(--red); }
+    .badge.audio { color: var(--gold); }
+    .badge.platform { color: var(--green); }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--line);
+    }
+
+    .facts div {
+      min-width: 0;
+      padding: 9px;
+      border-right: 1px solid var(--line);
+      background: #050505;
+    }
+
+    .facts div:last-child { border-right: 0; }
+
+    .facts span {
+      display: block;
+      color: var(--faint);
+      font: 10px/1 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .facts strong {
+      display: block;
+      margin-top: 5px;
+      font: 400 13px/1.18 var(--sans);
+    }
+
+    .description {
+      margin: 0;
+    }
+
+    .model-list {
+      margin: 0;
+      color: var(--ink);
+      font-size: 13px;
+    }
+
+    .model-list span {
+      color: var(--muted);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      color: var(--muted);
+    }
+
+    .table-wrap {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      min-width: 980px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #050505;
+      color: var(--muted);
+      font: 11px/1 var(--mono);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .matrix th:first-child,
+    .matrix td:first-child {
+      position: sticky;
+      left: 0;
+      background: var(--surface);
+      z-index: 1;
+    }
+
+    .matrix th:first-child {
+      background: #050505;
+    }
+
+    .yes {
+      color: #111;
+      background: var(--soft);
+      justify-content: center;
+      min-width: 32px;
+    }
+
+    .no {
+      color: var(--faint);
+      justify-content: center;
+      min-width: 32px;
+    }
+
+    .partial {
+      color: var(--gold);
+      justify-content: center;
+      min-width: 32px;
+    }
+
+    .own {
+      color: #111;
+      background: var(--gold);
+      justify-content: center;
+      min-width: 32px;
+    }
+
+    .updates {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .update {
+      min-width: 0;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      padding: 16px;
+    }
+
+    .update time {
+      color: var(--muted);
+      font: 11px/1 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .update h3 {
+      margin-top: 8px;
+      margin-bottom: 6px;
+    }
+
+    .update p {
+      margin: 0;
+    }
+
+    .sources {
+      margin-top: 42px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      padding: 16px;
+      font-size: 13px;
+    }
+
+    .sources h2 {
+      color: var(--ink);
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .sources ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 1100px) {
+      .app {
+        padding: 0 16px 36px;
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 0;
+        left: auto;
+        transform: none;
+        z-index: 20;
+        width: calc(100% + 32px);
+        max-width: none;
+        margin-left: -16px;
+        padding: 12px 16px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        background: rgba(0, 0, 0, .94);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(10px);
+      }
+
+      .brand {
+        position: static;
+        width: auto;
+      }
+
+      nav {
+        display: none;
+        grid-column: 1 / -1;
+        max-width: calc(100vw - 32px);
+        margin-top: 12px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--surface);
+      }
+
+      .sidebar.menu-open nav {
+        display: grid;
+      }
+
+      .menu-toggle {
+        display: block;
+        margin-top: 0;
+      }
+
+      .main {
+        padding-top: 32px;
+      }
+
+      .topbar {
+        width: auto;
+        max-width: none;
+        margin-left: 0;
+        margin-bottom: 32px;
+      }
+
+      .toolbar {
+        position: sticky;
+        top: 65px;
+        z-index: 19;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        width: calc(100% + 32px);
+        max-width: none;
+        margin-left: -16px;
+        margin-bottom: 48px;
+        padding: 12px 16px 14px;
+        background: rgba(0, 0, 0, .94);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(10px);
+      }
+
+      .toolbar > div:first-child,
+      .toolbar > div:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .main > section {
+        margin-left: 0;
+        max-width: none;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .grid,
+      .updates,
+      .facts {
+        grid-template-columns: 1fr;
+      }
+
+      .facts div {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .facts div:last-child {
+        border-bottom: 0;
+      }
+
+      .section-head {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--<div class="brand">
+    <div>
+      <strong>genai-index</strong>
+      <span>updated daily</span>
+    </div>
+  </div>-->
+  <div class="app">
+    <aside class="sidebar">
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+      <nav aria-label="Sections">
+        <a href="#models">Models</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#compare">Compare</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#availability">Availability</a>
+        <a href="#updates">Updates</a>
+        <a href="#sources">Sources</a>
+      </nav>
+      <div class="side-note">
+        MVP prototype with curated starter data. Production version should ingest official docs, provider APIs, changelogs, and verified manual edits.
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div>
+          <h1>Track GenAI models, platforms, pricing, and availability in one place. Updated daily.</h1>
+          <p class="lede">A practical reference for developers, creators, founders, and AI professionals trying to navigate a fragmented market that changes every week.</p>
+        </div>
+        <div class="status-card">
+          <span>Directory status</span>
+          <strong>Starter MVP</strong>
+          <p>Last checked: June 10, 2026. Data shown here is intentionally source-linked and easy to replace.</p>
+        </div>
+      </div>
+
+      <div class="kpis" id="kpis"></div>
+
+      <div class="toolbar" aria-label="Directory filters">
+        <div>
+          <label for="search">Search</label>
+          <input id="search" type="search" placeholder="Search models, platforms, modalities...">
+        </div>
+        <div>
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="All">All categories</option>
+            <option value="Image">Image</option>
+            <option value="Video">Video</option>
+            <option value="Audio">Audio</option>
+            <option value="Agent">Agent</option>
+          </select>
+        </div>
+        <div>
+          <label for="api">API</label>
+          <select id="api">
+            <option value="All">Any API status</option>
+            <option value="Yes">API available</option>
+            <option value="No">No API</option>
+          </select>
+        </div>
+        <div>
+          <label for="sort">Sort</label>
+          <select id="sort">
+            <option value="recent">Newest release</option>
+            <option value="name">Name</option>
+            <option value="provider">Provider</option>
+            <option value="context">Context size</option>
+          </select>
+        </div>
+      </div>
+
+      <section id="models">
+        <div class="section-head">
+          <div>
+            <h2>Models Directory</h2>
+            <p>Core model facts: category, modality, context, API access, openness, pricing, and strengths.</p>
+          </div>
+        </div>
+        <div class="grid" id="modelCards"></div>
+      </section>
+
+      <section id="platforms">
+        <div class="section-head">
+          <div>
+            <h2>Platforms Directory</h2>
+            <p>Where users can access media generation through creative tools, production suites, marketplaces, or APIs.</p>
+          </div>
+        </div>
+        <div class="grid" id="platformCards"></div>
+      </section>
+
+      <section id="compare">
+        <div class="section-head">
+          <div>
+            <h2>Model Comparison</h2>
+            <p>Side-by-side snapshot for price, context, modalities, API support, and key capabilities.</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Provider</th>
+                <th>Category</th>
+                <th>Pricing</th>
+                <th>Context</th>
+                <th>Modalities</th>
+                <th>API</th>
+                <th>Open</th>
+                <th>Strengths</th>
+              </tr>
+            </thead>
+            <tbody id="comparisonRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="section-head">
+          <div>
+            <h2>Pricing Tracker</h2>
+            <p>Current pricing, subscription mechanics, credit systems, and recent pricing-related changes.</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Type</th>
+                <th>Current pricing</th>
+                <th>Mechanic</th>
+                <th>Recent / notable change</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody id="pricingRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="availability">
+        <div class="section-head">
+          <div>
+            <h2>Availability</h2>
+            <p>Where a model can be accessed. “Yes” means advertised access; “Own” marks a first-party exclusive model.</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="matrix">
+            <thead id="matrixHead"></thead>
+            <tbody id="matrixRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="updates">
+        <div class="section-head">
+          <div>
+            <h2>Updates</h2>
+            <p>Chronological release, pricing, and platform notes for newsletter and social repurposing.</p>
+          </div>
+        </div>
+        <div class="updates" id="updatesList"></div>
+      </section>
+
+      <section id="sources" class="sources">
+        <h2>Sources</h2>
+        <p>Production should prefer official pricing docs, product changelogs, model cards, and platform docs. Starter sources used for this prototype:</p>
+        <ul>
+          <li><a href="https://ai.google.dev/gemini-api/docs/pricing">Google Veo / media API pricing</a></li>
+          <li><a href="https://runwayml.com/pricing">Runway pricing</a></li>
+          <li><a href="https://higgsfield.ai">Higgsfield</a></li>
+          <li><a href="https://artlist.io">Artlist</a></li>
+          <li><a href="https://elevenlabs.io">ElevenLabs</a></li>
+          <li><a href="https://weavy.ai">Weavy</a></li>
+          <li><a href="https://www.topview.ai">Topview</a></li>
+          <li><a href="https://pika.art/pricing">Pika pricing</a></li>
+          <li><a href="https://www.krea.ai/pricing">Krea pricing</a></li>
+          <li><a href="https://www.magnific.com/pricing">Magnific / Freepik pricing</a></li>
+          <li><a href="https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans">Midjourney plans</a></li>
+          <li><a href="https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html">Adobe generative credits FAQ</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="data/catalog.generated.js"></script>
+  <script>
+    const catalog = window.GENAI_CATALOG;
+    if (!catalog) {
+      throw new Error("Missing generated catalog data. Run npm run build.");
+    }
+
+    const { models, platforms, pricingEvents, updates, matrixPlatforms, availability } = catalog;
+
+    function normalize(text) {
+      return String(text).toLowerCase();
+    }
+
+    function filteredModels() {
+      const q = normalize(document.querySelector("#search").value);
+      const category = document.querySelector("#category").value;
+      const api = document.querySelector("#api").value;
+      const sort = document.querySelector("#sort").value;
+
+      const result = models.filter(model => {
+        const haystack = normalize([
+          model.name,
+          model.provider,
+          model.category,
+          model.modalities.join(" "),
+          model.strengths.join(" "),
+          model.description
+        ].join(" "));
+        const categoryOk = category === "All" || model.category === category;
+        const apiOk = api === "All" || (api === "Yes" ? model.apiAvailable === "Yes" : model.apiAvailable !== "Yes");
+        return haystack.includes(q) && categoryOk && apiOk;
+      });
+
+      const sorters = {
+        recent: (a, b) => b.releaseDate.localeCompare(a.releaseDate),
+        name: (a, b) => a.name.localeCompare(b.name),
+        provider: (a, b) => a.provider.localeCompare(b.provider),
+        context: (a, b) => b.contextValue - a.contextValue
+      };
+
+      return result.sort(sorters[sort]);
+    }
+
+    function renderKpis() {
+      const apiCount = models.filter(model => model.apiAvailable === "Yes").length;
+      const openCount = models.filter(model => model.openSource === "Open" || model.openSource === "Mixed").length;
+      const kpis = [
+        ["Models", models.length],
+        ["Platforms", platforms.length],
+        ["API models", apiCount],
+        ["Open / mixed", openCount],
+        ["Updates", updates.length]
+      ];
+
+      document.querySelector("#kpis").innerHTML = kpis.map(([label, value]) => `
+        <div class="kpi"><span>${label}</span><strong>${value}</strong></div>
+      `).join("");
+    }
+
+    function renderModelCards(list) {
+      document.querySelector("#modelCards").innerHTML = list.map(model => `
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>${model.name}</h3>
+              <p class="sub">${model.provider} · released ${model.releaseDate}</p>
+            </div>
+            <span class="badge ${model.category.toLowerCase()}">${model.category}</span>
+          </div>
+          <div class="facts">
+            <div><span>Context</span><strong>${model.contextWindow}</strong></div>
+            <div><span>API</span><strong>${model.apiAvailable}</strong></div>
+            <div><span>Source</span><strong>${model.openSource}</strong></div>
+          </div>
+          <p class="description">${model.description}</p>
+          <div class="tags">
+            ${model.modalities.map(tag => `<span class="tag">${tag}</span>`).join("")}
+            ${model.strengths.map(tag => `<span class="tag">${tag}</span>`).join("")}
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderPlatformCards() {
+      document.querySelector("#platformCards").innerHTML = platforms.map(platform => `
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>${platform.name}</h3>
+              <p class="sub">${platform.category} · <a href="${platform.url}">${platform.url.replace("https://", "")}</a></p>
+            </div>
+            <span class="badge platform">Platform</span>
+          </div>
+          <div class="facts">
+            <div><span>Pricing</span><strong>${platform.pricing}</strong></div>
+            <div><span>API</span><strong>${platform.apiAccess}</strong></div>
+            <div><span>Geo</span><strong>${platform.geo}</strong></div>
+          </div>
+          <p class="description">${platform.description}</p>
+          <p class="model-list"><span>Models:</span> ${platform.modelsAvailable.join(", ")}</p>
+          <div class="tags">
+            ${platform.strengths.map(tag => `<span class="tag">${tag}</span>`).join("")}
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderComparison(list) {
+      document.querySelector("#comparisonRows").innerHTML = list.map(model => `
+        <tr>
+          <td><strong>${model.name}</strong><br><span class="sub">${model.status}</span></td>
+          <td>${model.provider}</td>
+          <td>${model.category}</td>
+          <td>${model.pricing}</td>
+          <td>${model.contextWindow}</td>
+          <td>${model.modalities.join(", ")}</td>
+          <td>${model.apiAvailable}</td>
+          <td>${model.openSource}</td>
+          <td>${model.strengths.join(", ")}</td>
+        </tr>
+      `).join("");
+    }
+
+    function renderPricing() {
+      document.querySelector("#pricingRows").innerHTML = pricingEvents.map(item => `
+        <tr>
+          <td><strong>${item.product}</strong></td>
+          <td>${item.type}</td>
+          <td>${item.current}</td>
+          <td>${item.mechanic}</td>
+          <td>${item.change}</td>
+          <td>${item.source}</td>
+        </tr>
+      `).join("");
+    }
+
+    function renderMatrix() {
+      document.querySelector("#matrixHead").innerHTML = `
+        <tr>
+          <th>Model</th>
+          ${matrixPlatforms.map(platform => `<th>${platform}</th>`).join("")}
+        </tr>
+      `;
+
+      document.querySelector("#matrixRows").innerHTML = Object.entries(availability).map(([model, places]) => `
+        <tr>
+          <td><strong>${model}</strong></td>
+          ${matrixPlatforms.map(platform => {
+            const status = places[platform] || "-";
+            const mark = status === "Own" ? "own" : status === "Yes" ? "yes" : "no";
+            return `<td><span class="${mark}">${status}</span></td>`;
+          }).join("")}
+        </tr>
+      `).join("");
+    }
+
+    function renderUpdates() {
+      const sorted = [...updates].sort((a, b) => b.date.localeCompare(a.date));
+      document.querySelector("#updatesList").innerHTML = sorted.map(update => `
+        <article class="update">
+          <time>${update.date} · ${update.type}</time>
+          <h3>${update.title}</h3>
+          <p>${update.summary}</p>
+        </article>
+      `).join("");
+    }
+
+    function render() {
+      const list = filteredModels();
+      renderKpis();
+      renderModelCards(list);
+      renderComparison(list);
+      renderPlatformCards();
+      renderPricing();
+      renderMatrix();
+      renderUpdates();
+    }
+
+    document.querySelector("#search").addEventListener("input", render);
+    document.querySelector("#category").addEventListener("change", render);
+    document.querySelector("#api").addEventListener("change", render);
+    document.querySelector("#sort").addEventListener("change", render);
+
+    const sidebar = document.querySelector(".sidebar");
+    const menuToggle = document.querySelector(".menu-toggle");
+    menuToggle.addEventListener("click", () => {
+      const open = sidebar.classList.toggle("menu-open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    });
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", () => {
+        sidebar.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+      });
+    });
+
+    render();
+  </script>
+</body>
+</html>

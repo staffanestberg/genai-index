@@ -1,0 +1,13 @@
+{
+  "name": "genai-index",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 4173",
+    "extract": "node scripts/extract-catalog.mjs",
+    "build": "node scripts/build.mjs",
+    "update:sources": "node scripts/update-sources.mjs",
+    "update": "npm run update:sources && npm run build"
+  }
+}
