@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-06-16T10:06:53.670Z",
+  "checkedAt": "2026-06-16T11:32:31.298Z",
   "ok": false,
   "results": [
     {
@@ -8,8 +8,8 @@
       "url": "https://higgsfield.ai/",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-16T10:06:51.365Z",
-      "durationMs": 478,
+      "checkedAt": "2026-06-16T11:32:28.957Z",
+      "durationMs": 349,
       "matches": {
         "GPT Image": true,
         "Seedance": true,
@@ -28,8 +28,8 @@
       "url": "https://artlist.io/",
       "ok": false,
       "status": 403,
-      "checkedAt": "2026-06-16T10:06:51.427Z",
-      "durationMs": 61,
+      "checkedAt": "2026-06-16T11:32:29.064Z",
+      "durationMs": 107,
       "matches": {
         "Veo": false,
         "Nano Banana": false,
@@ -48,8 +48,8 @@
       "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-16T10:06:51.896Z",
-      "durationMs": 469,
+      "checkedAt": "2026-06-16T11:32:29.391Z",
+      "durationMs": 327,
       "matches": {
         "image-video": true,
         "Seedance 2": true,
@@ -64,8 +64,8 @@
       "url": "https://weave.figma.com/",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-16T10:06:51.981Z",
-      "durationMs": 85,
+      "checkedAt": "2026-06-16T11:32:29.526Z",
+      "durationMs": 135,
       "matches": {
         "Google": true,
         "Kling": true,
@@ -86,8 +86,8 @@
       "url": "https://runwayml.com/pricing",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-16T10:06:52.083Z",
-      "durationMs": 102,
+      "checkedAt": "2026-06-16T11:32:29.698Z",
+      "durationMs": 172,
       "matches": {
         "Gen-4": true,
         "Veo": true,
@@ -102,8 +102,8 @@
       "url": "https://pika.art/pricing",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-16T10:06:52.407Z",
-      "durationMs": 324,
+      "checkedAt": "2026-06-16T11:32:29.989Z",
+      "durationMs": 291,
       "matches": {
         "Pika 2.5": true,
         "Pikaframes": true,
@@ -117,8 +117,8 @@
       "url": "https://www.topview.ai/",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-16T10:06:53.522Z",
-      "durationMs": 1115,
+      "checkedAt": "2026-06-16T11:32:30.917Z",
+      "durationMs": 928,
       "matches": {
         "GPT Image2": true,
         "Seedance 2.0": true,
@@ -133,8 +133,8 @@
       "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
       "ok": false,
       "status": 403,
-      "checkedAt": "2026-06-16T10:06:53.610Z",
-      "durationMs": 88,
+      "checkedAt": "2026-06-16T11:32:31.142Z",
+      "durationMs": 225,
       "matches": {
         "Basic": false,
         "Standard": false,
@@ -149,8 +149,8 @@
       "url": "https://www.adobe.com/products/firefly.html",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-16T10:06:53.670Z",
-      "durationMs": 60,
+      "checkedAt": "2026-06-16T11:32:31.298Z",
+      "durationMs": 156,
       "matches": {
         "GPT Image": true,
         "Nano Banana": true,
