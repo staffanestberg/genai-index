@@ -3,9 +3,9 @@ window.GENAI_CATALOG = {
     "name": "GenAI Index",
     "description": "Track GenAI models, platforms, pricing, and availability in one place. Updated daily.",
     "extractedAt": "2026-06-15T10:13:40.629Z",
-    "lastBuiltAt": "2026-06-15T16:06:16.627Z",
+    "lastBuiltAt": "2026-06-16T07:30:02.979Z",
     "sourceStatus": {
-      "checkedAt": "2026-06-15T16:06:16.459Z",
+      "checkedAt": "2026-06-16T07:29:51.523Z",
       "ok": false,
       "results": [
         {
@@ -14,8 +14,8 @@ window.GENAI_CATALOG = {
           "url": "https://higgsfield.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-15T16:06:07.042Z",
-          "durationMs": 343,
+          "checkedAt": "2026-06-16T07:29:42.459Z",
+          "durationMs": 217,
           "matches": {
             "GPT Image": true,
             "Seedance": true,
@@ -34,8 +34,8 @@ window.GENAI_CATALOG = {
           "url": "https://artlist.io/",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-06-15T16:06:07.095Z",
-          "durationMs": 53,
+          "checkedAt": "2026-06-16T07:29:42.512Z",
+          "durationMs": 52,
           "matches": {
             "Veo": false,
             "Nano Banana": false,
@@ -51,17 +51,17 @@ window.GENAI_CATALOG = {
         {
           "id": "elevenlabs",
           "name": "ElevenLabs",
-          "url": "https://elevenlabs.io/",
+          "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-15T16:06:07.410Z",
-          "durationMs": 315,
+          "checkedAt": "2026-06-16T07:29:42.951Z",
+          "durationMs": 439,
           "matches": {
-            "Eleven v3": true,
-            "Music": true,
-            "Scribe": true,
-            "Dubbing": true,
-            "Voice": true
+            "image-video": true,
+            "Seedance 2": true,
+            "Kling 3.0": true,
+            "Google Veo 3.1": true,
+            "OpenAI Sora 2": true
           }
         },
         {
@@ -70,8 +70,8 @@ window.GENAI_CATALOG = {
           "url": "https://weave.figma.com/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-15T16:06:07.522Z",
-          "durationMs": 112,
+          "checkedAt": "2026-06-16T07:29:43.018Z",
+          "durationMs": 67,
           "matches": {
             "Google": true,
             "Kling": true,
@@ -92,8 +92,8 @@ window.GENAI_CATALOG = {
           "url": "https://runwayml.com/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-15T16:06:07.609Z",
-          "durationMs": 88,
+          "checkedAt": "2026-06-16T07:29:43.140Z",
+          "durationMs": 122,
           "matches": {
             "Gen-4": true,
             "Veo": true,
@@ -108,8 +108,8 @@ window.GENAI_CATALOG = {
           "url": "https://pika.art/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-15T16:06:08.304Z",
-          "durationMs": 694,
+          "checkedAt": "2026-06-16T07:29:43.456Z",
+          "durationMs": 316,
           "matches": {
             "Pika 2.5": true,
             "Pikaframes": true,
@@ -123,8 +123,8 @@ window.GENAI_CATALOG = {
           "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-06-15T16:06:08.458Z",
-          "durationMs": 154,
+          "checkedAt": "2026-06-16T07:29:43.518Z",
+          "durationMs": 62,
           "matches": {
             "Basic": false,
             "Standard": false,
@@ -139,8 +139,8 @@ window.GENAI_CATALOG = {
           "url": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html",
           "ok": false,
           "error": "This operation was aborted",
-          "checkedAt": "2026-06-15T16:06:16.459Z",
-          "durationMs": 8001,
+          "checkedAt": "2026-06-16T07:29:51.523Z",
+          "durationMs": 8005,
           "matches": {}
         }
       ]
@@ -553,7 +553,7 @@ window.GENAI_CATALOG = {
       "id": "elevenlabs",
       "name": "ElevenLabs",
       "url": "https://elevenlabs.io",
-      "category": "Audio",
+      "category": "Creative Audio & Video",
       "pricing": "Free and paid subscriptions; usage-based tiers",
       "modelsAvailable": [
         "Eleven v3",
@@ -561,17 +561,22 @@ window.GENAI_CATALOG = {
         "Scribe",
         "Voice Isolator",
         "Dubbing",
-        "Voice Library"
+        "Voice Library",
+        "Seedance 2",
+        "Kling 3.0",
+        "Veo 3.1",
+        "Sora 2"
       ],
       "apiAccess": "Yes",
       "geo": "Broad",
-      "description": "Audio generation platform for voice, dubbing, narration, and sound effects.",
+      "description": "Audio-first generation platform that also offers beta image and video generation inside ElevenCreative.",
       "strengths": [
         "Voice quality",
         "Dubbing",
-        "Audio APIs"
+        "Audio APIs",
+        "Image & Video beta"
       ],
-      "limitations": "Broad within audio, but not a general image/video model router."
+      "limitations": "Image and video model availability is plan, workspace, and geography dependent; Seedance 2 is not available in the United States."
     },
     {
       "id": "weavy",
@@ -790,12 +795,14 @@ window.GENAI_CATALOG = {
       "Runway": "Yes",
       "Higgsfield": "Yes",
       "Artlist": "Yes",
+      "ElevenLabs": "Yes",
       "Weavy": "Yes",
       "Krea": "Yes"
     },
     "Sora 2": {
       "Higgsfield": "Yes",
       "Artlist": "Yes",
+      "ElevenLabs": "Yes",
       "Weavy": "Yes",
       "Krea": "Yes"
     },
@@ -818,6 +825,7 @@ window.GENAI_CATALOG = {
       "Runway": "Yes",
       "Higgsfield": "Yes",
       "Artlist": "Yes",
+      "ElevenLabs": "Yes",
       "Weavy": "Yes",
       "Krea": "Yes"
     },
@@ -825,6 +833,7 @@ window.GENAI_CATALOG = {
       "Runway": "Yes",
       "Higgsfield": "Yes",
       "Artlist": "Yes",
+      "ElevenLabs": "Partial",
       "Weavy": "Yes",
       "Krea": "Yes"
     },

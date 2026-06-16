@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-06-15T16:06:16.459Z",
+  "checkedAt": "2026-06-16T07:29:51.523Z",
   "ok": false,
   "results": [
     {
@@ -8,8 +8,8 @@
       "url": "https://higgsfield.ai/",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-15T16:06:07.042Z",
-      "durationMs": 343,
+      "checkedAt": "2026-06-16T07:29:42.459Z",
+      "durationMs": 217,
       "matches": {
         "GPT Image": true,
         "Seedance": true,
@@ -28,8 +28,8 @@
       "url": "https://artlist.io/",
       "ok": false,
       "status": 403,
-      "checkedAt": "2026-06-15T16:06:07.095Z",
-      "durationMs": 53,
+      "checkedAt": "2026-06-16T07:29:42.512Z",
+      "durationMs": 52,
       "matches": {
         "Veo": false,
         "Nano Banana": false,
@@ -45,17 +45,17 @@
     {
       "id": "elevenlabs",
       "name": "ElevenLabs",
-      "url": "https://elevenlabs.io/",
+      "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-15T16:06:07.410Z",
-      "durationMs": 315,
+      "checkedAt": "2026-06-16T07:29:42.951Z",
+      "durationMs": 439,
       "matches": {
-        "Eleven v3": true,
-        "Music": true,
-        "Scribe": true,
-        "Dubbing": true,
-        "Voice": true
+        "image-video": true,
+        "Seedance 2": true,
+        "Kling 3.0": true,
+        "Google Veo 3.1": true,
+        "OpenAI Sora 2": true
       }
     },
     {
@@ -64,8 +64,8 @@
       "url": "https://weave.figma.com/",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-15T16:06:07.522Z",
-      "durationMs": 112,
+      "checkedAt": "2026-06-16T07:29:43.018Z",
+      "durationMs": 67,
       "matches": {
         "Google": true,
         "Kling": true,
@@ -86,8 +86,8 @@
       "url": "https://runwayml.com/pricing",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-15T16:06:07.609Z",
-      "durationMs": 88,
+      "checkedAt": "2026-06-16T07:29:43.140Z",
+      "durationMs": 122,
       "matches": {
         "Gen-4": true,
         "Veo": true,
@@ -102,8 +102,8 @@
       "url": "https://pika.art/pricing",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-06-15T16:06:08.304Z",
-      "durationMs": 694,
+      "checkedAt": "2026-06-16T07:29:43.456Z",
+      "durationMs": 316,
       "matches": {
         "Pika 2.5": true,
         "Pikaframes": true,
@@ -117,8 +117,8 @@
       "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
       "ok": false,
       "status": 403,
-      "checkedAt": "2026-06-15T16:06:08.458Z",
-      "durationMs": 154,
+      "checkedAt": "2026-06-16T07:29:43.518Z",
+      "durationMs": 62,
       "matches": {
         "Basic": false,
         "Standard": false,
@@ -133,8 +133,8 @@
       "url": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html",
       "ok": false,
       "error": "This operation was aborted",
-      "checkedAt": "2026-06-15T16:06:16.459Z",
-      "durationMs": 8001,
+      "checkedAt": "2026-06-16T07:29:51.523Z",
+      "durationMs": 8005,
       "matches": {}
     }
   ]

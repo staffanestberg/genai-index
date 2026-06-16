@@ -14,8 +14,8 @@
   {
     "id": "elevenlabs",
     "name": "ElevenLabs",
-    "url": "https://elevenlabs.io/",
-    "watchTerms": ["Eleven v3", "Music", "Scribe", "Dubbing", "Voice"]
+    "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
+    "watchTerms": ["image-video", "Seedance 2", "Kling 3.0", "Google Veo 3.1", "OpenAI Sora 2"]
   },
   {
     "id": "weavy",

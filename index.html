@@ -919,7 +919,7 @@
           <td><strong>${model}</strong></td>
           ${matrixPlatforms.map(platform => {
             const status = places[platform] || "-";
-            const mark = status === "Own" ? "own" : status === "Yes" ? "yes" : "no";
+            const mark = status === "Own" ? "own" : status === "Yes" ? "yes" : status === "Partial" ? "partial" : "no";
             return `<td><span class="${mark}">${status}</span></td>`;
           }).join("")}
         </tr>
