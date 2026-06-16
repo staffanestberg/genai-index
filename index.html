@@ -119,7 +119,7 @@
       white-space: nowrap;
     }
 
-    nav a:first-child,
+    nav a.is-active,
     nav a:hover {
       background: var(--soft);
       color: #111;
@@ -954,15 +954,58 @@
     document.querySelector("#sort").addEventListener("change", render);
 
     const sectionNav = document.querySelector("#sectionNav");
+    const navLinks = [...document.querySelectorAll("nav a")];
+    const sections = navLinks
+      .map(link => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    function setActiveSection(hash) {
+      const activeHash = hash || "#models";
+      navLinks.forEach(link => {
+        const active = link.getAttribute("href") === activeHash;
+        link.classList.toggle("is-active", active);
+        if (active) {
+          link.setAttribute("aria-current", "true");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+
+      if ([...sectionNav.options].some(option => option.value === activeHash)) {
+        sectionNav.value = activeHash;
+      }
+    }
+
     sectionNav.addEventListener("change", event => {
       window.location.hash = event.target.value;
+      setActiveSection(event.target.value);
     });
 
-    document.querySelectorAll("nav a").forEach(link => {
+    navLinks.forEach(link => {
       link.addEventListener("click", () => {
-        sectionNav.value = link.getAttribute("href");
+        setActiveSection(link.getAttribute("href"));
       });
     });
+
+    window.addEventListener("hashchange", () => {
+      setActiveSection(window.location.hash);
+    });
+
+    const sectionObserver = new IntersectionObserver(entries => {
+      const visible = entries
+        .filter(entry => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+
+      if (visible) {
+        setActiveSection(`#${visible.target.id}`);
+      }
+    }, {
+      rootMargin: "-35% 0px -55% 0px",
+      threshold: 0
+    });
+
+    sections.forEach(section => sectionObserver.observe(section));
+    setActiveSection(window.location.hash);
 
     render();
   </script>
