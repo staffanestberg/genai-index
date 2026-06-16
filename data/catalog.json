@@ -492,6 +492,10 @@
       "category": "Creative Video",
       "pricing": "Subscription / credits",
       "modelsAvailable": [
+        "GPT Image 2",
+        "Seedance 2.0",
+        "Kling 3.0",
+        "HappyHorse",
         "AI ads",
         "avatar video",
         "product videos",
@@ -499,13 +503,14 @@
       ],
       "apiAccess": "No public general API in starter dataset",
       "geo": "Broad",
-      "description": "AI video platform oriented around ads, ecommerce, product videos, and short-form content.",
+      "description": "AI video platform oriented around ads, ecommerce, product videos, and short-form content, with public pages listing GPT Image 2, Seedance 2.0, and Kling 3.0 workflows.",
       "strengths": [
         "Performance creative",
         "Ecommerce video",
+        "Model-backed workflows",
         "Templates"
       ],
-      "limitations": "Best evaluated by output format and credits rather than raw model names."
+      "limitations": "Model access and exact generation costs vary by plan, credits, resolution, and workflow."
     },
     {
       "id": "krea",
@@ -563,17 +568,26 @@
         "Firefly Image",
         "Firefly Video",
         "Generative Fill",
-        "Generative Extend"
+        "Generative Extend",
+        "GPT Image",
+        "Gemini / Nano Banana",
+        "FLUX",
+        "Kling AI",
+        "Runway",
+        "ElevenLabs",
+        "Luma AI",
+        "Topaz"
       ],
       "apiAccess": "Partial",
       "geo": "Broad, feature-dependent",
-      "description": "Adobe-native generative media platform integrated with Creative Cloud apps.",
+      "description": "Adobe-native generative media platform integrated with Creative Cloud apps, Firefly models, and partner models from Google, OpenAI, Kling AI, Runway, Black Forest Labs, Luma AI, ElevenLabs, and Topaz.",
       "strengths": [
         "Adobe workflow",
         "Commercial positioning",
+        "Partner models",
         "Editing"
       ],
-      "limitations": "Partner model usage and premium credits differ by feature."
+      "limitations": "Exact partner-model SKUs and credit rates vary by feature, plan, and region."
     }
   ],
   "pricingEvents": [
@@ -668,16 +682,20 @@
       "Higgsfield": "Yes",
       "Artlist": "Yes",
       "Weavy": "Yes",
-      "Krea": "Yes"
+      "Topview": "Yes",
+      "Krea": "Yes",
+      "Adobe": "Partial"
     },
     "Nano Banana Pro": {
       "Higgsfield": "Yes",
       "Artlist": "Yes",
-      "Krea": "Yes"
+      "Krea": "Yes",
+      "Adobe": "Partial"
     },
     "Runway Gen-4.5": {
       "Runway": "Yes",
-      "Weavy": "Yes"
+      "Weavy": "Yes",
+      "Adobe": "Partial"
     },
     "Kling 3.0": {
       "Runway": "Yes",
@@ -685,7 +703,9 @@
       "Artlist": "Yes",
       "ElevenLabs": "Yes",
       "Weavy": "Yes",
-      "Krea": "Yes"
+      "Topview": "Yes",
+      "Krea": "Yes",
+      "Adobe": "Partial"
     },
     "Seedance 2.0": {
       "Runway": "Yes",
@@ -693,6 +713,7 @@
       "Artlist": "Yes",
       "ElevenLabs": "Partial",
       "Weavy": "Yes",
+      "Topview": "Yes",
       "Krea": "Yes"
     },
     "Wan 2.7": {
@@ -704,14 +725,16 @@
       "Runway": "Yes",
       "Higgsfield": "Yes",
       "Weavy": "Yes",
-      "Krea": "Yes"
+      "Krea": "Yes",
+      "Adobe": "Partial"
     },
     "Lyria 3": {
       "Artlist": "Yes"
     },
     "Eleven v3": {
       "Artlist": "Yes",
-      "ElevenLabs": "Yes"
+      "ElevenLabs": "Yes",
+      "Adobe": "Partial"
     },
     "Midjourney": {
       "Midjourney": "Own"

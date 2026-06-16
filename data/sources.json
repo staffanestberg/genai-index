@@ -36,6 +36,12 @@
     "watchTerms": ["Pika 2.5", "Pikaframes", "Pikascenes", "Pikaswaps"]
   },
   {
+    "id": "topview",
+    "name": "Topview",
+    "url": "https://www.topview.ai/",
+    "watchTerms": ["GPT Image2", "Seedance 2.0", "Kling 3.0", "AI Video", "AI Avatar"]
+  },
+  {
     "id": "midjourney",
     "name": "Midjourney",
     "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
@@ -44,7 +50,7 @@
   {
     "id": "adobe-firefly",
     "name": "Adobe Firefly",
-    "url": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html",
-    "watchTerms": ["Firefly Image", "Firefly Video", "Generative Credits", "Premium"]
+    "url": "https://www.adobe.com/products/firefly.html",
+    "watchTerms": ["GPT Image", "Nano Banana", "FLUX", "Kling AI", "Runway", "ElevenLabs"]
   }
 ]

@@ -3,9 +3,9 @@ window.GENAI_CATALOG = {
     "name": "GenAI Index",
     "description": "Track GenAI models, platforms, pricing, and availability in one place. Updated daily.",
     "extractedAt": "2026-06-15T10:13:40.629Z",
-    "lastBuiltAt": "2026-06-16T07:30:02.979Z",
+    "lastBuiltAt": "2026-06-16T10:07:23.911Z",
     "sourceStatus": {
-      "checkedAt": "2026-06-16T07:29:51.523Z",
+      "checkedAt": "2026-06-16T10:06:53.670Z",
       "ok": false,
       "results": [
         {
@@ -14,8 +14,8 @@ window.GENAI_CATALOG = {
           "url": "https://higgsfield.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-16T07:29:42.459Z",
-          "durationMs": 217,
+          "checkedAt": "2026-06-16T10:06:51.365Z",
+          "durationMs": 478,
           "matches": {
             "GPT Image": true,
             "Seedance": true,
@@ -34,8 +34,8 @@ window.GENAI_CATALOG = {
           "url": "https://artlist.io/",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-06-16T07:29:42.512Z",
-          "durationMs": 52,
+          "checkedAt": "2026-06-16T10:06:51.427Z",
+          "durationMs": 61,
           "matches": {
             "Veo": false,
             "Nano Banana": false,
@@ -54,8 +54,8 @@ window.GENAI_CATALOG = {
           "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-16T07:29:42.951Z",
-          "durationMs": 439,
+          "checkedAt": "2026-06-16T10:06:51.896Z",
+          "durationMs": 469,
           "matches": {
             "image-video": true,
             "Seedance 2": true,
@@ -70,8 +70,8 @@ window.GENAI_CATALOG = {
           "url": "https://weave.figma.com/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-16T07:29:43.018Z",
-          "durationMs": 67,
+          "checkedAt": "2026-06-16T10:06:51.981Z",
+          "durationMs": 85,
           "matches": {
             "Google": true,
             "Kling": true,
@@ -92,8 +92,8 @@ window.GENAI_CATALOG = {
           "url": "https://runwayml.com/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-16T07:29:43.140Z",
-          "durationMs": 122,
+          "checkedAt": "2026-06-16T10:06:52.083Z",
+          "durationMs": 102,
           "matches": {
             "Gen-4": true,
             "Veo": true,
@@ -108,8 +108,8 @@ window.GENAI_CATALOG = {
           "url": "https://pika.art/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-16T07:29:43.456Z",
-          "durationMs": 316,
+          "checkedAt": "2026-06-16T10:06:52.407Z",
+          "durationMs": 324,
           "matches": {
             "Pika 2.5": true,
             "Pikaframes": true,
@@ -118,13 +118,29 @@ window.GENAI_CATALOG = {
           }
         },
         {
+          "id": "topview",
+          "name": "Topview",
+          "url": "https://www.topview.ai/",
+          "ok": true,
+          "status": 200,
+          "checkedAt": "2026-06-16T10:06:53.522Z",
+          "durationMs": 1115,
+          "matches": {
+            "GPT Image2": true,
+            "Seedance 2.0": true,
+            "Kling 3.0": true,
+            "AI Video": true,
+            "AI Avatar": true
+          }
+        },
+        {
           "id": "midjourney",
           "name": "Midjourney",
           "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-06-16T07:29:43.518Z",
-          "durationMs": 62,
+          "checkedAt": "2026-06-16T10:06:53.610Z",
+          "durationMs": 88,
           "matches": {
             "Basic": false,
             "Standard": false,
@@ -136,12 +152,19 @@ window.GENAI_CATALOG = {
         {
           "id": "adobe-firefly",
           "name": "Adobe Firefly",
-          "url": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html",
-          "ok": false,
-          "error": "This operation was aborted",
-          "checkedAt": "2026-06-16T07:29:51.523Z",
-          "durationMs": 8005,
-          "matches": {}
+          "url": "https://www.adobe.com/products/firefly.html",
+          "ok": true,
+          "status": 200,
+          "checkedAt": "2026-06-16T10:06:53.670Z",
+          "durationMs": 60,
+          "matches": {
+            "GPT Image": true,
+            "Nano Banana": true,
+            "FLUX": true,
+            "Kling AI": true,
+            "Runway": true,
+            "ElevenLabs": true
+          }
         }
       ]
     }
@@ -634,6 +657,10 @@ window.GENAI_CATALOG = {
       "category": "Creative Video",
       "pricing": "Subscription / credits",
       "modelsAvailable": [
+        "GPT Image 2",
+        "Seedance 2.0",
+        "Kling 3.0",
+        "HappyHorse",
         "AI ads",
         "avatar video",
         "product videos",
@@ -641,13 +668,14 @@ window.GENAI_CATALOG = {
       ],
       "apiAccess": "No public general API in starter dataset",
       "geo": "Broad",
-      "description": "AI video platform oriented around ads, ecommerce, product videos, and short-form content.",
+      "description": "AI video platform oriented around ads, ecommerce, product videos, and short-form content, with public pages listing GPT Image 2, Seedance 2.0, and Kling 3.0 workflows.",
       "strengths": [
         "Performance creative",
         "Ecommerce video",
+        "Model-backed workflows",
         "Templates"
       ],
-      "limitations": "Best evaluated by output format and credits rather than raw model names."
+      "limitations": "Model access and exact generation costs vary by plan, credits, resolution, and workflow."
     },
     {
       "id": "krea",
@@ -705,17 +733,26 @@ window.GENAI_CATALOG = {
         "Firefly Image",
         "Firefly Video",
         "Generative Fill",
-        "Generative Extend"
+        "Generative Extend",
+        "GPT Image",
+        "Gemini / Nano Banana",
+        "FLUX",
+        "Kling AI",
+        "Runway",
+        "ElevenLabs",
+        "Luma AI",
+        "Topaz"
       ],
       "apiAccess": "Partial",
       "geo": "Broad, feature-dependent",
-      "description": "Adobe-native generative media platform integrated with Creative Cloud apps.",
+      "description": "Adobe-native generative media platform integrated with Creative Cloud apps, Firefly models, and partner models from Google, OpenAI, Kling AI, Runway, Black Forest Labs, Luma AI, ElevenLabs, and Topaz.",
       "strengths": [
         "Adobe workflow",
         "Commercial positioning",
+        "Partner models",
         "Editing"
       ],
-      "limitations": "Partner model usage and premium credits differ by feature."
+      "limitations": "Exact partner-model SKUs and credit rates vary by feature, plan, and region."
     }
   ],
   "pricingEvents": [
@@ -810,16 +847,20 @@ window.GENAI_CATALOG = {
       "Higgsfield": "Yes",
       "Artlist": "Yes",
       "Weavy": "Yes",
-      "Krea": "Yes"
+      "Topview": "Yes",
+      "Krea": "Yes",
+      "Adobe": "Partial"
     },
     "Nano Banana Pro": {
       "Higgsfield": "Yes",
       "Artlist": "Yes",
-      "Krea": "Yes"
+      "Krea": "Yes",
+      "Adobe": "Partial"
     },
     "Runway Gen-4.5": {
       "Runway": "Yes",
-      "Weavy": "Yes"
+      "Weavy": "Yes",
+      "Adobe": "Partial"
     },
     "Kling 3.0": {
       "Runway": "Yes",
@@ -827,7 +868,9 @@ window.GENAI_CATALOG = {
       "Artlist": "Yes",
       "ElevenLabs": "Yes",
       "Weavy": "Yes",
-      "Krea": "Yes"
+      "Topview": "Yes",
+      "Krea": "Yes",
+      "Adobe": "Partial"
     },
     "Seedance 2.0": {
       "Runway": "Yes",
@@ -835,6 +878,7 @@ window.GENAI_CATALOG = {
       "Artlist": "Yes",
       "ElevenLabs": "Partial",
       "Weavy": "Yes",
+      "Topview": "Yes",
       "Krea": "Yes"
     },
     "Wan 2.7": {
@@ -846,14 +890,16 @@ window.GENAI_CATALOG = {
       "Runway": "Yes",
       "Higgsfield": "Yes",
       "Weavy": "Yes",
-      "Krea": "Yes"
+      "Krea": "Yes",
+      "Adobe": "Partial"
     },
     "Lyria 3": {
       "Artlist": "Yes"
     },
     "Eleven v3": {
       "Artlist": "Yes",
-      "ElevenLabs": "Yes"
+      "ElevenLabs": "Yes",
+      "Adobe": "Partial"
     },
     "Midjourney": {
       "Midjourney": "Own"
