@@ -3,9 +3,9 @@ window.GENAI_CATALOG = {
     "name": "GenAI Index",
     "description": "Track GenAI models, platforms, pricing, and availability in one place. Updated daily.",
     "extractedAt": "2026-06-15T10:13:40.629Z",
-    "lastBuiltAt": "2026-06-24T09:49:47.048Z",
+    "lastBuiltAt": "2026-06-25T09:41:27.900Z",
     "sourceStatus": {
-      "checkedAt": "2026-06-24T09:49:46.772Z",
+      "checkedAt": "2026-06-25T09:41:27.617Z",
       "ok": false,
       "results": [
         {
@@ -14,8 +14,8 @@ window.GENAI_CATALOG = {
           "url": "https://higgsfield.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-24T09:49:45.291Z",
-          "durationMs": 425,
+          "checkedAt": "2026-06-25T09:41:26.082Z",
+          "durationMs": 490,
           "matches": {
             "GPT Image": true,
             "Seedance": true,
@@ -34,8 +34,8 @@ window.GENAI_CATALOG = {
           "url": "https://artlist.io/",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-06-24T09:49:45.342Z",
-          "durationMs": 51,
+          "checkedAt": "2026-06-25T09:41:26.151Z",
+          "durationMs": 69,
           "matches": {
             "Veo": false,
             "Nano Banana": false,
@@ -54,8 +54,8 @@ window.GENAI_CATALOG = {
           "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-24T09:49:45.685Z",
-          "durationMs": 343,
+          "checkedAt": "2026-06-25T09:41:26.491Z",
+          "durationMs": 340,
           "matches": {
             "image-video": true,
             "Seedance 2": true,
@@ -70,8 +70,8 @@ window.GENAI_CATALOG = {
           "url": "https://weave.figma.com/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-24T09:49:45.747Z",
-          "durationMs": 62,
+          "checkedAt": "2026-06-25T09:41:26.559Z",
+          "durationMs": 68,
           "matches": {
             "Google": true,
             "Kling": true,
@@ -92,8 +92,8 @@ window.GENAI_CATALOG = {
           "url": "https://runwayml.com/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-24T09:49:45.844Z",
-          "durationMs": 97,
+          "checkedAt": "2026-06-25T09:41:26.653Z",
+          "durationMs": 94,
           "matches": {
             "Gen-4": true,
             "Veo": true,
@@ -108,8 +108,8 @@ window.GENAI_CATALOG = {
           "url": "https://pika.art/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-24T09:49:46.106Z",
-          "durationMs": 262,
+          "checkedAt": "2026-06-25T09:41:26.959Z",
+          "durationMs": 306,
           "matches": {
             "Pika 2.5": true,
             "Pikaframes": true,
@@ -123,8 +123,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.topview.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-24T09:49:46.684Z",
-          "durationMs": 578,
+          "checkedAt": "2026-06-25T09:41:27.464Z",
+          "durationMs": 505,
           "matches": {
             "GPT Image2": true,
             "Seedance 2.0": true,
@@ -139,8 +139,8 @@ window.GENAI_CATALOG = {
           "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-06-24T09:49:46.741Z",
-          "durationMs": 57,
+          "checkedAt": "2026-06-25T09:41:27.585Z",
+          "durationMs": 121,
           "matches": {
             "Basic": false,
             "Standard": false,
@@ -155,8 +155,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.adobe.com/products/firefly.html",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-06-24T09:49:46.772Z",
-          "durationMs": 31,
+          "checkedAt": "2026-06-25T09:41:27.617Z",
+          "durationMs": 32,
           "matches": {
             "GPT Image": true,
             "Nano Banana": true,
