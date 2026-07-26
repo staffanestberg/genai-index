@@ -3,9 +3,9 @@ window.GENAI_CATALOG = {
     "name": "GenAI Index",
     "description": "Track GenAI models, platforms, pricing, and availability in one place. Updated daily.",
     "extractedAt": "2026-06-15T10:13:40.629Z",
-    "lastBuiltAt": "2026-07-25T08:21:25.192Z",
+    "lastBuiltAt": "2026-07-26T08:37:58.596Z",
     "sourceStatus": {
-      "checkedAt": "2026-07-25T08:21:24.896Z",
+      "checkedAt": "2026-07-26T08:37:58.477Z",
       "ok": false,
       "results": [
         {
@@ -14,10 +14,10 @@ window.GENAI_CATALOG = {
           "url": "https://higgsfield.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-07-25T08:21:22.890Z",
-          "durationMs": 557,
+          "checkedAt": "2026-07-26T08:37:55.991Z",
+          "durationMs": 170,
           "matches": {
-            "GPT Image": true,
+            "GPT Image": false,
             "Seedance": true,
             "Kling": true,
             "Sora": true,
@@ -34,8 +34,8 @@ window.GENAI_CATALOG = {
           "url": "https://artlist.io/",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-07-25T08:21:22.950Z",
-          "durationMs": 60,
+          "checkedAt": "2026-07-26T08:37:56.221Z",
+          "durationMs": 230,
           "matches": {
             "Veo": false,
             "Nano Banana": false,
@@ -54,8 +54,8 @@ window.GENAI_CATALOG = {
           "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-07-25T08:21:23.290Z",
-          "durationMs": 340,
+          "checkedAt": "2026-07-26T08:37:56.625Z",
+          "durationMs": 404,
           "matches": {
             "image-video": true,
             "Seedance 2": true,
@@ -70,8 +70,8 @@ window.GENAI_CATALOG = {
           "url": "https://weave.figma.com/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-07-25T08:21:23.379Z",
-          "durationMs": 89,
+          "checkedAt": "2026-07-26T08:37:56.722Z",
+          "durationMs": 97,
           "matches": {
             "Google": true,
             "Kling": true,
@@ -92,8 +92,8 @@ window.GENAI_CATALOG = {
           "url": "https://runwayml.com/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-07-25T08:21:23.697Z",
-          "durationMs": 318,
+          "checkedAt": "2026-07-26T08:37:57.222Z",
+          "durationMs": 500,
           "matches": {
             "Gen-4": true,
             "Veo": true,
@@ -108,8 +108,8 @@ window.GENAI_CATALOG = {
           "url": "https://pika.art/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-07-25T08:21:24.067Z",
-          "durationMs": 370,
+          "checkedAt": "2026-07-26T08:37:57.586Z",
+          "durationMs": 364,
           "matches": {
             "Pika 2.5": true,
             "Pikaframes": true,
@@ -123,8 +123,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.topview.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-07-25T08:21:24.582Z",
-          "durationMs": 515,
+          "checkedAt": "2026-07-26T08:37:58.187Z",
+          "durationMs": 601,
           "matches": {
             "GPT Image2": false,
             "Seedance 2.0": true,
@@ -139,8 +139,8 @@ window.GENAI_CATALOG = {
           "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-07-25T08:21:24.735Z",
-          "durationMs": 153,
+          "checkedAt": "2026-07-26T08:37:58.348Z",
+          "durationMs": 161,
           "matches": {
             "Basic": false,
             "Standard": false,
@@ -155,8 +155,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.adobe.com/products/firefly.html",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-07-25T08:21:24.896Z",
-          "durationMs": 161,
+          "checkedAt": "2026-07-26T08:37:58.477Z",
+          "durationMs": 129,
           "matches": {
             "GPT Image": true,
             "Nano Banana": true,
