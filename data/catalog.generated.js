@@ -3,9 +3,9 @@ window.GENAI_CATALOG = {
     "name": "GenAI Index",
     "description": "Track GenAI models, platforms, pricing, and availability in one place. Updated daily.",
     "extractedAt": "2026-06-15T10:13:40.629Z",
-    "lastBuiltAt": "2026-09-21T12:41:25.629Z",
+    "lastBuiltAt": "2026-09-22T11:30:06.049Z",
     "sourceStatus": {
-      "checkedAt": "2026-09-21T12:41:25.478Z",
+      "checkedAt": "2026-09-22T11:30:05.916Z",
       "ok": false,
       "results": [
         {
@@ -14,8 +14,8 @@ window.GENAI_CATALOG = {
           "url": "https://higgsfield.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-09-21T12:41:21.954Z",
-          "durationMs": 352,
+          "checkedAt": "2026-09-22T11:30:03.696Z",
+          "durationMs": 177,
           "matches": {
             "GPT Image": false,
             "Seedance": true,
@@ -34,8 +34,8 @@ window.GENAI_CATALOG = {
           "url": "https://artlist.io/",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-09-21T12:41:22.380Z",
-          "durationMs": 425,
+          "checkedAt": "2026-09-22T11:30:03.902Z",
+          "durationMs": 206,
           "matches": {
             "Veo": false,
             "Nano Banana": false,
@@ -54,8 +54,8 @@ window.GENAI_CATALOG = {
           "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-09-21T12:41:23.011Z",
-          "durationMs": 631,
+          "checkedAt": "2026-09-22T11:30:04.457Z",
+          "durationMs": 555,
           "matches": {
             "image-video": true,
             "Seedance 2": true,
@@ -70,8 +70,8 @@ window.GENAI_CATALOG = {
           "url": "https://weave.figma.com/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-09-21T12:41:23.277Z",
-          "durationMs": 266,
+          "checkedAt": "2026-09-22T11:30:04.580Z",
+          "durationMs": 123,
           "matches": {
             "Google": true,
             "Kling": true,
@@ -92,8 +92,8 @@ window.GENAI_CATALOG = {
           "url": "https://runwayml.com/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-09-21T12:41:24.032Z",
-          "durationMs": 755,
+          "checkedAt": "2026-09-22T11:30:05.088Z",
+          "durationMs": 508,
           "matches": {
             "Gen-4": true,
             "Veo": true,
@@ -108,8 +108,8 @@ window.GENAI_CATALOG = {
           "url": "https://pika.art/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-09-21T12:41:24.667Z",
-          "durationMs": 635,
+          "checkedAt": "2026-09-22T11:30:05.351Z",
+          "durationMs": 263,
           "matches": {
             "Pika 2.5": true,
             "Pikaframes": false,
@@ -123,8 +123,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.topview.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-09-21T12:41:24.992Z",
-          "durationMs": 325,
+          "checkedAt": "2026-09-22T11:30:05.544Z",
+          "durationMs": 193,
           "matches": {
             "GPT Image2": false,
             "Seedance 2.0": true,
@@ -139,8 +139,8 @@ window.GENAI_CATALOG = {
           "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-09-21T12:41:25.288Z",
-          "durationMs": 296,
+          "checkedAt": "2026-09-22T11:30:05.730Z",
+          "durationMs": 186,
           "matches": {
             "Basic": false,
             "Standard": false,
@@ -155,8 +155,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.adobe.com/products/firefly.html",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-09-21T12:41:25.478Z",
-          "durationMs": 190,
+          "checkedAt": "2026-09-22T11:30:05.916Z",
+          "durationMs": 186,
           "matches": {
             "GPT Image": true,
             "Nano Banana": true,
