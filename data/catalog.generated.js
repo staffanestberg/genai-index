@@ -3,9 +3,9 @@ window.GENAI_CATALOG = {
     "name": "GenAI Index",
     "description": "Track GenAI models, platforms, pricing, and availability in one place. Updated daily.",
     "extractedAt": "2026-06-15T10:13:40.629Z",
-    "lastBuiltAt": "2026-10-14T11:44:30.038Z",
+    "lastBuiltAt": "2026-10-15T11:20:33.113Z",
     "sourceStatus": {
-      "checkedAt": "2026-10-14T11:44:29.868Z",
+      "checkedAt": "2026-10-15T11:20:32.966Z",
       "ok": false,
       "results": [
         {
@@ -14,8 +14,8 @@ window.GENAI_CATALOG = {
           "url": "https://higgsfield.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-14T11:44:28.019Z",
-          "durationMs": 214,
+          "checkedAt": "2026-10-15T11:20:31.559Z",
+          "durationMs": 1015,
           "matches": {
             "GPT Image": false,
             "Seedance": true,
@@ -34,8 +34,8 @@ window.GENAI_CATALOG = {
           "url": "https://artlist.io/",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-10-14T11:44:28.097Z",
-          "durationMs": 78,
+          "checkedAt": "2026-10-15T11:20:31.666Z",
+          "durationMs": 106,
           "matches": {
             "Veo": false,
             "Nano Banana": false,
@@ -45,7 +45,7 @@ window.GENAI_CATALOG = {
             "Seedance": false,
             "Lyria": false,
             "ElevenLabs": false,
-            "Wan": true
+            "Wan": false
           }
         },
         {
@@ -54,8 +54,8 @@ window.GENAI_CATALOG = {
           "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-14T11:44:28.611Z",
-          "durationMs": 514,
+          "checkedAt": "2026-10-15T11:20:31.969Z",
+          "durationMs": 303,
           "matches": {
             "image-video": true,
             "Seedance 2": true,
@@ -70,8 +70,8 @@ window.GENAI_CATALOG = {
           "url": "https://weave.figma.com/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-14T11:44:28.781Z",
-          "durationMs": 170,
+          "checkedAt": "2026-10-15T11:20:32.069Z",
+          "durationMs": 100,
           "matches": {
             "Google": true,
             "Kling": true,
@@ -92,8 +92,8 @@ window.GENAI_CATALOG = {
           "url": "https://runwayml.com/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-14T11:44:29.110Z",
-          "durationMs": 329,
+          "checkedAt": "2026-10-15T11:20:32.340Z",
+          "durationMs": 271,
           "matches": {
             "Gen-4": true,
             "Veo": true,
@@ -108,8 +108,8 @@ window.GENAI_CATALOG = {
           "url": "https://pika.art/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-14T11:44:29.331Z",
-          "durationMs": 221,
+          "checkedAt": "2026-10-15T11:20:32.646Z",
+          "durationMs": 306,
           "matches": {
             "Pika 2.5": true,
             "Pikaframes": true,
@@ -123,8 +123,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.topview.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-14T11:44:29.535Z",
-          "durationMs": 204,
+          "checkedAt": "2026-10-15T11:20:32.775Z",
+          "durationMs": 129,
           "matches": {
             "GPT Image2": false,
             "Seedance 2.0": true,
@@ -139,8 +139,8 @@ window.GENAI_CATALOG = {
           "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-10-14T11:44:29.753Z",
-          "durationMs": 218,
+          "checkedAt": "2026-10-15T11:20:32.882Z",
+          "durationMs": 107,
           "matches": {
             "Basic": false,
             "Standard": false,
@@ -155,8 +155,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.adobe.com/products/firefly.html",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-14T11:44:29.868Z",
-          "durationMs": 115,
+          "checkedAt": "2026-10-15T11:20:32.965Z",
+          "durationMs": 83,
           "matches": {
             "GPT Image": true,
             "Nano Banana": true,
