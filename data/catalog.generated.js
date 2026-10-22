@@ -3,9 +3,9 @@ window.GENAI_CATALOG = {
     "name": "GenAI Index",
     "description": "Track GenAI models, platforms, pricing, and availability in one place. Updated daily.",
     "extractedAt": "2026-06-15T10:13:40.629Z",
-    "lastBuiltAt": "2026-10-21T11:40:54.839Z",
+    "lastBuiltAt": "2026-10-22T11:43:22.431Z",
     "sourceStatus": {
-      "checkedAt": "2026-10-21T11:40:54.669Z",
+      "checkedAt": "2026-10-22T11:43:22.255Z",
       "ok": false,
       "results": [
         {
@@ -14,8 +14,8 @@ window.GENAI_CATALOG = {
           "url": "https://higgsfield.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-21T11:40:52.480Z",
-          "durationMs": 195,
+          "checkedAt": "2026-10-22T11:43:21.014Z",
+          "durationMs": 186,
           "matches": {
             "GPT Image": false,
             "Seedance": true,
@@ -34,8 +34,8 @@ window.GENAI_CATALOG = {
           "url": "https://artlist.io/",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-10-21T11:40:52.599Z",
-          "durationMs": 119,
+          "checkedAt": "2026-10-22T11:43:21.074Z",
+          "durationMs": 60,
           "matches": {
             "Veo": false,
             "Nano Banana": false,
@@ -54,8 +54,8 @@ window.GENAI_CATALOG = {
           "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-21T11:40:53.098Z",
-          "durationMs": 499,
+          "checkedAt": "2026-10-22T11:43:21.425Z",
+          "durationMs": 351,
           "matches": {
             "image-video": true,
             "Seedance 2": true,
@@ -70,8 +70,8 @@ window.GENAI_CATALOG = {
           "url": "https://weave.figma.com/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-21T11:40:53.276Z",
-          "durationMs": 178,
+          "checkedAt": "2026-10-22T11:43:21.507Z",
+          "durationMs": 82,
           "matches": {
             "Google": true,
             "Kling": true,
@@ -92,8 +92,8 @@ window.GENAI_CATALOG = {
           "url": "https://runwayml.com/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-21T11:40:53.644Z",
-          "durationMs": 368,
+          "checkedAt": "2026-10-22T11:43:21.748Z",
+          "durationMs": 241,
           "matches": {
             "Gen-4": true,
             "Veo": true,
@@ -108,8 +108,8 @@ window.GENAI_CATALOG = {
           "url": "https://pika.art/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-21T11:40:54.087Z",
-          "durationMs": 443,
+          "checkedAt": "2026-10-22T11:43:22.033Z",
+          "durationMs": 285,
           "matches": {
             "Pika 2.5": true,
             "Pikaframes": true,
@@ -123,8 +123,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.topview.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-21T11:40:54.272Z",
-          "durationMs": 185,
+          "checkedAt": "2026-10-22T11:43:22.106Z",
+          "durationMs": 73,
           "matches": {
             "GPT Image2": false,
             "Seedance 2.0": true,
@@ -139,8 +139,8 @@ window.GENAI_CATALOG = {
           "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-10-21T11:40:54.458Z",
-          "durationMs": 186,
+          "checkedAt": "2026-10-22T11:43:22.194Z",
+          "durationMs": 88,
           "matches": {
             "Basic": false,
             "Standard": false,
@@ -155,8 +155,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.adobe.com/products/firefly.html",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-10-21T11:40:54.669Z",
-          "durationMs": 211,
+          "checkedAt": "2026-10-22T11:43:22.254Z",
+          "durationMs": 60,
           "matches": {
             "GPT Image": true,
             "Nano Banana": true,
