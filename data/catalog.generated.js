@@ -3,9 +3,9 @@ window.GENAI_CATALOG = {
     "name": "GenAI Index",
     "description": "Track GenAI models, platforms, pricing, and availability in one place. Updated daily.",
     "extractedAt": "2026-06-15T10:13:40.629Z",
-    "lastBuiltAt": "2026-11-09T16:05:30.225Z",
+    "lastBuiltAt": "2026-11-10T14:46:24.340Z",
     "sourceStatus": {
-      "checkedAt": "2026-11-09T16:05:30.062Z",
+      "checkedAt": "2026-11-10T14:46:24.177Z",
       "ok": false,
       "results": [
         {
@@ -14,8 +14,8 @@ window.GENAI_CATALOG = {
           "url": "https://higgsfield.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-11-09T16:05:27.293Z",
-          "durationMs": 329,
+          "checkedAt": "2026-11-10T14:46:22.412Z",
+          "durationMs": 173,
           "matches": {
             "GPT Image": true,
             "Seedance": true,
@@ -34,8 +34,8 @@ window.GENAI_CATALOG = {
           "url": "https://artlist.io/",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-11-09T16:05:27.354Z",
-          "durationMs": 60,
+          "checkedAt": "2026-11-10T14:46:22.570Z",
+          "durationMs": 158,
           "matches": {
             "Veo": false,
             "Nano Banana": false,
@@ -54,8 +54,8 @@ window.GENAI_CATALOG = {
           "url": "https://elevenlabs.io/docs/overview/capabilities/image-video",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-11-09T16:05:27.973Z",
-          "durationMs": 619,
+          "checkedAt": "2026-11-10T14:46:22.885Z",
+          "durationMs": 315,
           "matches": {
             "image-video": true,
             "Seedance 2": true,
@@ -70,8 +70,8 @@ window.GENAI_CATALOG = {
           "url": "https://weave.figma.com/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-11-09T16:05:28.932Z",
-          "durationMs": 959,
+          "checkedAt": "2026-11-10T14:46:23.032Z",
+          "durationMs": 147,
           "matches": {
             "Google": true,
             "Kling": true,
@@ -92,8 +92,8 @@ window.GENAI_CATALOG = {
           "url": "https://runwayml.com/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-11-09T16:05:29.253Z",
-          "durationMs": 320,
+          "checkedAt": "2026-11-10T14:46:23.262Z",
+          "durationMs": 230,
           "matches": {
             "Gen-4": true,
             "Veo": true,
@@ -108,8 +108,8 @@ window.GENAI_CATALOG = {
           "url": "https://pika.art/pricing",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-11-09T16:05:29.624Z",
-          "durationMs": 371,
+          "checkedAt": "2026-11-10T14:46:23.494Z",
+          "durationMs": 232,
           "matches": {
             "Pika 2.5": true,
             "Pikaframes": true,
@@ -123,8 +123,8 @@ window.GENAI_CATALOG = {
           "url": "https://www.topview.ai/",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-11-09T16:05:29.857Z",
-          "durationMs": 233,
+          "checkedAt": "2026-11-10T14:46:23.579Z",
+          "durationMs": 85,
           "matches": {
             "GPT Image2": false,
             "Seedance 2.0": true,
@@ -139,8 +139,8 @@ window.GENAI_CATALOG = {
           "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
           "ok": false,
           "status": 403,
-          "checkedAt": "2026-11-09T16:05:30.001Z",
-          "durationMs": 144,
+          "checkedAt": "2026-11-10T14:46:23.688Z",
+          "durationMs": 109,
           "matches": {
             "Basic": false,
             "Standard": false,
@@ -155,13 +155,13 @@ window.GENAI_CATALOG = {
           "url": "https://www.adobe.com/products/firefly.html",
           "ok": true,
           "status": 200,
-          "checkedAt": "2026-11-09T16:05:30.062Z",
-          "durationMs": 61,
+          "checkedAt": "2026-11-10T14:46:24.176Z",
+          "durationMs": 488,
           "matches": {
             "GPT Image": true,
             "Nano Banana": true,
             "FLUX": true,
-            "Kling AI": true,
+            "Kling AI": false,
             "Runway": true,
             "ElevenLabs": true
           }
